@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body onload="renderPage()">
+
+    <div id="target">Loading...</div>
+
+    <script id="template" type="x-tmpl-mustache">
+    <div class="metros_main">
+      <div class="metros_left">
+        <section class="metros_left_top border"></section>
+
+        <section class="metros_left_main">
+          <div class="metros_left_main_1 border">
+            <div class="content-block">
+              <img src="{{main.imageUrl}}" />
+              <h3 class="uppercase">
+                {{main.title}}
+              </h3>
+              <p>
+                {{main.intro}}
+              </p>
+              <label>{{main.published}}</label>
+            </div>
+          </div>
+          <div class="metros_left_main_2 border">
+            <div class="content-block">
+              <img src="{{sub.imageUrl}}" />
+              <h4>{{sub.title}}</h4>
+              <p>
+                {{sub.intro}}
+              </p>
+              <label>{{sub.published}}</label>
+            </div>
+
+            <div class="content-block-small border-top">
+              <div class="content-block-small-core"><h5>One Nation support has crshed :Newspoll<h5>
+              <img src="https://placehold.co/100x80" /></div>
+              <label>1h</label>
+            </div>
+
+            <div class="content-block-small border-top">
+              <div class="content-block-small-core"><h5>Two fake cops robbed Sydney currency exchange shop<h5>
+              <img src="https://placehold.co/100x80" /></div>
+              <label>1h</label>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="metros_right">
+        <section class="metros_right_sidebar_1 border"></section>
+        <section class="metros_right_sidebar_2 border"></section>
+      </div>
+    </script>
+  </div>
+    <script src="https://unpkg.com/mustache@latest"></script>
+  </body>
+</html>
